@@ -41,6 +41,11 @@ int main() {
 
     integer = ans_num / ans_de; // 整数
     remainder = ans_num % ans_de; // 余数
+    // 此段if代码修正一个bug，即有可能输入 2 1/3 -2/3： 计算得remainder为正、ans_de是负数，若不改正，输出1/-3，正确答案应该是-1/3
+    if (remainder > 0 && ans_de < 0) {
+        remainder = -remainder;
+        ans_de = -ans_de;
+    }
 
     if (integer != 0) { // 整数不为0
         if (remainder != 0) { // 余数不为0
