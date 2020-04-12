@@ -26,10 +26,15 @@ void LetsGO(int decimal, int base) {
 
     printf("%s\n", flag ? "Yes" : "No");
 
-    for (int j = i - 1; j >= 0; --j) {
-        printf("%d", num[j]);
-        if (j > 0) printf(" ");
+    if (i >= 1) {
+        for (int j = i - 1; j >= 0; --j) {
+            printf("%d", num[j]);
+            if (j > 0) printf(" ");
+        }
+    } else {
+        printf("%d", 0); // 这个if-else修复了一个输入为0 2的bug，即i = 0所以，除了yes，不会输出数字0
     }
+
 }
 
 int main() {
