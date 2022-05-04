@@ -1,0 +1,3 @@
+/Users/williamjing/Documents/Clion Projects/PAT-Basic-1017/cmake-build-debug/CMakeFiles/PAT_Basic_1017.dir
+/Users/williamjing/Documents/Clion Projects/PAT-Basic-1017/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/williamjing/Documents/Clion Projects/PAT-Basic-1017/cmake-build-debug/CMakeFiles/rebuild_cache.dir
